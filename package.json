@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -24,11 +25,18 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "typescript": "^5"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "lint-staged": {
+    "*": "prettier --write",
+    "*.{ts,tsx,js}": "lint",
+    "*.{ts, tsx}": "eslint --fix"
   }
 }
