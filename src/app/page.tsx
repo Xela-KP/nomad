@@ -1,4 +1,4 @@
-import NomadLandingTitle from 'components/NomadLandingTitle';
+import NomadLandingTitle from 'components/Title/NomadLandingTitle';
 
 export default function Home() {
   return (
