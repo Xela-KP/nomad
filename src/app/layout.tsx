@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@mui/material';
-import Background from 'components/Background';
 import DefaultTheme from 'styles/themes';
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,15 +14,7 @@ export default function RootLayout({
   return (
     <ThemeProvider theme={DefaultTheme}>
       <html lang="en">
-        <body>
-          <Background
-            starCount={5000}
-            starColor={[255, 255, 255]}
-            speedFactor={0.05}
-            backgroundColor="black"
-          />
-          {children}
-        </body>
+        <body>{children}</body>
       </html>
     </ThemeProvider>
   );
