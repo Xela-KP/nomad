@@ -1,15 +1,20 @@
 const Navigation = () => (
-  <nav>
-    <h1>HLLOE</h1>
-    <ul>
-      <li>
-        <a href="#about">about</a>
+  <nav className="sticky pt-10 top-0 right-0">
+    <ul className="space-x-10">
+      <li className="inline-block">
+        <a href="#about" className="font-bold text-lg ">
+          about
+        </a>
       </li>
-      <li>
-        <a href="#works">work</a>
+      <li className="inline-block">
+        <a href="#works" className="font-bold text-lg">
+          work
+        </a>
       </li>
-      <li>
-        <a href="#contact">contact</a>
+      <li className="inline-block">
+        <a href="#contact" className="font-bold text-lg">
+          contact
+        </a>
       </li>
     </ul>
   </nav>
