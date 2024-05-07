@@ -3,23 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply m-auto;
-    @apply max-w-screen-xl;
-    @apply min-h-screen;
+  :root {
+    @apply bg-beige;
+    @apply text-black;
   }
   h1 {
     @apply text-7xl;
-    @apply font-bold;
+    @apply font-light;
   }
   h2 {
-    @apply text-5xl;
-    @apply font-semibold;
+    @apply text-4xl;
+    @apply font-light;
   }
   h3 {
     @apply text-3xl;
     @apply font-medium;
-  }
-  p {
   }
 }
