@@ -1,7 +1,9 @@
+import Navigation from 'components/Navigation';
+
 export default function Home() {
   return (
-    <main>
-      <h1 className=" text-blue">Hello World!</h1>
-    </main>
+    <div className="flex justify-between">
+      <Navigation />
+    </div>
   );
 }
