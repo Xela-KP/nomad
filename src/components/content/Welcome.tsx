@@ -11,10 +11,10 @@ const Welcome = () => (
 );
 
 const AboutButton = () => (
-  <div className="block px-4 rounded-t-md bg-black text-beige w-fit absolute bottom-0 right-20">
-    <Link href="#about">
+  <Link href="#about">
+    <div className="block px-4 rounded-t-md bg-black text-beige w-fit absolute bottom-0 right-20">
       <h3>about</h3>
-    </Link>
-  </div>
+    </div>
+  </Link>
 );
 export default Welcome;
