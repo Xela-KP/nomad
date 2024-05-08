@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    @apply bg-beige;
-    @apply text-black;
-  }
   h1 {
     @apply text-7xl;
     @apply font-light;

@@ -21,9 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <div className="m-auto px-16 min-h-screen max-w-screen-xl">
+        {/* <div className="m-auto px-16 min-h-screen max-w-screen-xl">
           <div className="lg:flex lg:justify-between lg:py-24">{children}</div>
-        </div>
+        </div> */}
+        {children}
       </body>
     </html>
   );
